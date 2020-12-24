@@ -1,3 +1,4 @@
+import 'package:animation_app/screens/singin/components/input_field.dart';
 import 'package:flutter/material.dart';
 
 class FormContainer extends StatelessWidget {
@@ -7,7 +8,11 @@ class FormContainer extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 20.0),
       child: Form(
         child: Column(
-          children: [],
+          children: [
+            InputField(
+                hint: "Usuário", obscure: false, icon: Icons.person_outlined),
+            InputField(hint: "Senha", obscure: true, icon: Icons.lock_outline)
+          ],
         ),
       ),
     );
