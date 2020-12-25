@@ -1,4 +1,4 @@
-import 'package:animation_app/screens/singin/singin_screen.dart';
+import 'package:animation_app/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: SinginScreen(),
+      home: SplashScreen(),
     );
   }
 }
