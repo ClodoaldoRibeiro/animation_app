@@ -4,6 +4,7 @@ import 'components/form_container.dart';
 import 'components/padding_container.dart';
 import 'components/singup_button.dart';
 import 'components/stagger_animation.dart';
+import 'package:flutter/scheduler.dart' show timeDilation;
 
 class SinginScreen extends StatefulWidget {
   @override
@@ -29,6 +30,8 @@ class _SinginScreenState extends State<SinginScreen>
 
   @override
   Widget build(BuildContext context) {
+    timeDilation = 1;
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
