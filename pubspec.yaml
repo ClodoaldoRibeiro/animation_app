@@ -61,7 +61,6 @@ flutter:
 
   assets:
      - assets/images/background.jpg
-     - assets/images/perfil.jpg
      - assets/images/tickicon.png
      - assets/images/cti.png
      - assets/images/logoSplash.png
