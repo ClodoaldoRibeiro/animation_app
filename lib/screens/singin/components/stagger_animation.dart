@@ -6,7 +6,7 @@ class StaggerAnimation extends StatelessWidget {
   final Animation<double> buttonSqueeze;
   final Animation<double> buttonZoomOut;
 
-  StaggerAnimation({this.controller})
+  StaggerAnimation({@required this.controller})
       : buttonSqueeze = Tween(begin: 320.0, end: 60.0).animate(
             CurvedAnimation(parent: controller, curve: Interval(0.000, 0.150))),
         buttonZoomOut = Tween(begin: 60.0, end: 1000.0).animate(CurvedAnimation(
