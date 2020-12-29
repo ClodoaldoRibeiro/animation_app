@@ -1,3 +1,4 @@
+import 'package:animation_app/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'components/form_container.dart';
@@ -20,6 +21,13 @@ class _SinginScreenState extends State<SinginScreen>
     super.initState();
     _animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 2));
+
+    _animationController.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => HomeScreen()));
+      }
+    });
   }
 
   @override

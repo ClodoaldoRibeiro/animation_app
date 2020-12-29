@@ -1,4 +1,3 @@
-import 'package:animation_app/screens/home/home_screen.dart';
 import 'package:animation_app/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
