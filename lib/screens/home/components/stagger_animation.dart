@@ -1,6 +1,8 @@
 import 'package:animation_app/screens/home/components/home_top.dart';
 import 'package:flutter/material.dart';
 
+import 'animated_list_view.dart';
+
 class StaggerAnimation extends StatelessWidget {
   final AnimationController controller;
 
@@ -21,7 +23,9 @@ class StaggerAnimation extends StatelessWidget {
       padding: EdgeInsets.zero,
       children: [
         HomeTop(containerGrow: containerGrow),
-        AnimatedListView(listSlidePosition),
+        AnimatedListView(
+          listSlidePosition: listSlidePosition,
+        ),
       ],
     );
   }
